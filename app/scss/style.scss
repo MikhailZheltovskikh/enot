@@ -30,7 +30,7 @@
       align-items: center;
       cursor: pointer;
    }
-   &-text {
+   &-title {
       font-weight: 900;
       font-size: 22px;
       line-height: 26px;
@@ -169,7 +169,7 @@
 //end header
 //start presentation
 .presentation {
-   background-color: #fafafa;
+   background-color: $bg;
    padding-top: 58px;
 }
 .presentation-about__inner {
@@ -184,7 +184,7 @@
 }
 .presentation-about__item-right {
    min-width: 540px;
-   background: #fafafa;
+   background: $bg;
    box-shadow: 4px 4px 65px rgba(0, 0, 0, 0.03);
    border-radius: 30px;
    display: flex;
@@ -324,5 +324,86 @@
    cursor: pointer;
 }
 //end products
+//start footer
+.footer {
+   padding: 66px 0 73px;
+   background-color: $bg;
+}
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.footer__logo-link {
+   display: flex;
+}
+.footer__logo-title {
+   color: #010101;
+   margin-left: 0;
+}
+.footer__logo-box {
+   margin-left: 20px;
+}
+.footer__logo-text {
+   font-size: 11px;
+   line-height: 169%;
+   color: rgba(53, 53, 53, 0.6);
+   font-weight: 400;
+}
+.footer__pay {
+   margin-top: 30px;
+   margin-left: 20px;
+}
+.footer__menu {
+   a {
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      color: #5c5c5c;
+   }
+   li + li{
+      margin-top: 20px;
+   }
+}
+.footer__title{
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: .03em;
+   font-feature-settings: 'pnum' on,'lnum' on;
+   color: #5c5c5c;
+   margin-bottom: 12px;
+}
+.footer__text{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 210%;
+   letter-spacing: 0.03em;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #5C5C5C;
+}
+.footer__contacts-phone,
+.footer__messege{
+   color: #4A4A4A;
+   display: block;
+   text-align: right;
+}
+.footer__contacts-phone{
+   padding-left: 0;
+   margin-bottom: 10px;
+   &::before{
+      display: none;
+   }
+}
+.footer__messege{
+   margin-bottom: 16px;
+}
+.footer__contacts-instagram{
+   display: flex;
+   justify-content: flex-end;
+   a{
+      margin: 0;
+   }
+}
+
+//end footer
 
 @import "midia";
