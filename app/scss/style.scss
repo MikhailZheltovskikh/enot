@@ -125,21 +125,8 @@
       line-height: 138.4%;
       margin-bottom: 29px;
    }
-   &-btn {
-      background: linear-gradient(180deg, #f0b403 0%, #f27e14 105.17%);
-      box-shadow: 0px 5px 34px rgba(241, 137, 160, 0.38);
-      border-radius: 12px;
-      color: #fff;
-      padding: 20px 5px;
-      width: 227px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 120.9%;
-      text-align: center;
-      letter-spacing: 0.03em;
-   }
 }
-.header__bottom{
+.header__bottom {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -180,5 +167,162 @@
    color: #ffffff;
 }
 //end header
+//start presentation
+.presentation {
+   background-color: #fafafa;
+   padding-top: 58px;
+}
+.presentation-about__inner {
+   display: flex;
+   margin-bottom: 42px;
+}
+.presentation-about__item-title {
+   margin-bottom: 14px;
+}
+.presentation-about__item-left {
+   margin-right: 30px;
+}
+.presentation-about__item-right {
+   min-width: 540px;
+   background: #fafafa;
+   box-shadow: 4px 4px 65px rgba(0, 0, 0, 0.03);
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.presentation-about__item-img {
+   width: 102px;
+   height: 102px;
+   border-radius: 50%;
+   background: linear-gradient(180deg, #f0b403 0%, #f27e14 105.17%);
+   box-shadow: 0px 5px 34px rgba(241, 137, 160, 0.38);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 26px;
+}
+.presentation-about__box-title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 126.4%;
+   letter-spacing: 0.05em;
+   color: #2e2f30;
+   margin-bottom: 20px;
+}
+.presentation-about__box-text {
+   li {
+      padding-left: 17px;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 8px;
+         height: 8px;
+         left: 0;
+         top: 6px;
+         border-radius: 50%;
+         background: #f5b706;
+      }
+   }
+}
+.presentation-product__inner {
+   display: flex;
+}
+.presentation-product__box-title2 {
+   font-size: 30px;
+   line-height: 38px;
+   letter-spacing: 0.05em;
+   font-weight: 400;
+   color: #2e2f30;
+   margin-top: 14px;
+   margin-bottom: 26px;
+}
+.presentation-product__box-text {
+   margin-bottom: 28px;
+}
+//end presentation
+//start products
+.products {
+   padding-top: 58px;
+   padding-bottom: 47px;
+}
+.products__top-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+}
+.products__top-link {
+   font-size: 18px;
+   line-height: 126.4%;
+   letter-spacing: 0.05em;
+   color: #2e2f30;
+   padding-right: 52px;
+   position: relative;
+   &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -5px;
+      width: 32px;
+      height: 32px;
+      background: url(../images/arrow-right.svg), linear-gradient(180deg, #f0b403 0%, #f27e14 105.17%);
+      box-shadow: 0px 5px 34px rgba(241, 137, 160, 0.38);
+      border-radius: 12px;
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+   &:hover {
+      color: #f5b706;
+   }
+}
+.products__inner {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -10px;
+   margin-bottom: 39px;
+}
+.products__item {
+   width: 25%;
+   padding: 10px;
+}
+.products__item-wrapper {
+   border: 1px solid #e7ecf1;
+   box-sizing: border-box;
+   box-shadow: 4px 4px 65px rgba(0, 0, 0, 0.02);
+   border-radius: 30px;
+   padding: 26px 44px 32px;
+   text-align: center;
+}
+.products__item {
+   &-image {
+      margin-bottom: 17px;
+      max-width: 100%;
+      min-height: 215px;
+      display: inline-block;
+   }
+   &-title {
+      margin-bottom: 22px;
+   }
+   &-btn {
+      color: #000;
+      background: transparent;
+      box-shadow: none;
+      border: 1px solid #f27e14;
+      &:hover {
+         color: #fff;
+         background: linear-gradient(180deg, #f0b403 0%, #f27e14 105.17%);
+         box-shadow: 0px 5px 34px rgba(241, 137, 160, 0.38);
+      }
+   }
+}
+.products__btn {
+   display: block;
+   width: 309px;
+   margin: 0 auto;
+   cursor: pointer;
+}
+//end products
 
 @import "midia";
