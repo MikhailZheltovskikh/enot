@@ -359,51 +359,151 @@
       letter-spacing: 0.03em;
       color: #5c5c5c;
    }
-   li + li{
+   li + li {
       margin-top: 20px;
    }
 }
-.footer__title{
+.footer__title {
    font-weight: 600;
    font-size: 14px;
    line-height: 16px;
-   letter-spacing: .03em;
-   font-feature-settings: 'pnum' on,'lnum' on;
+   letter-spacing: 0.03em;
+   font-feature-settings: "pnum" on, "lnum" on;
    color: #5c5c5c;
    margin-bottom: 12px;
 }
-.footer__text{
+.footer__text {
    font-weight: 400;
    font-size: 14px;
    line-height: 210%;
    letter-spacing: 0.03em;
-   font-feature-settings: 'pnum' on, 'lnum' on;
-   color: #5C5C5C;
+   font-feature-settings: "pnum" on, "lnum" on;
+   color: #5c5c5c;
 }
 .footer__contacts-phone,
-.footer__messege{
-   color: #4A4A4A;
+.footer__messege {
+   color: #4a4a4a;
    display: block;
    text-align: right;
 }
-.footer__contacts-phone{
+.footer__contacts-phone {
    padding-left: 0;
    margin-bottom: 10px;
-   &::before{
+   &::before {
       display: none;
    }
 }
-.footer__messege{
+.footer__messege {
    margin-bottom: 16px;
 }
-.footer__contacts-instagram{
+.footer__contacts-instagram {
    display: flex;
    justify-content: flex-end;
-   a{
+   a {
       margin: 0;
    }
 }
 
 //end footer
+//start advantage
+.advantage {
+   padding: 63px 0;
+   background-color: $bg;
+}
+.advantage__inner {
+   display: flex;
+   flex-wrap: wrap;
+}
+.advantage__item {
+   width: 25%;
+   padding: 0 40px;
+   text-align: center;
+   & + .advantage__item {
+      border-left: 1px solid #e4e4e4;
+   }
+   &-img {
+      max-width: 100%;
+      max-height: 100%;
+      margin-bottom: 14px;
+   }
+   &-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 107.9%;
+      text-align: center;
+      color: #2e2f30;
+      margin-bottom: 17px;
+   }
+   &-text {
+      font-size: 14px;
+      letter-spacing: 0.01em;
+   }
+}
+//end advantage
+.form {
+   min-height: 338px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center top;
+   padding: 38px 0 47px;
+}
+.form__title {
+   color: #fff;
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+.form__box {
+   margin-bottom: 13px;
+   display: flex;
+   width: 50%;
+   input,
+   textarea {
+      width: 100%;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 5px 34px rgba(241, 137, 160, 0.38));
+      border-radius: 12px;
+      background-color: transparent;
+      padding: 17px 19px 19px 19px;
+      color: #fff;
+      &::placeholder {
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 120.9%;
+         letter-spacing: 0.01em;
+         color: #ffffff;  
+      }
+   }
+   &-left {
+      width: 50%;
+      margin-right: 18px;
+      input{
+         height: 58px;
+        display: block;
+        & + input{
+           margin-top: 13px;
+        }
+      }
+      
+   }
+   &-right {
+      width: 50%;
+      textarea{
+
+         resize: none;
+         height: 129px;
+      }
+   }
+}
+//start links
+.links {
+   margin-top: 50px;
+   font-size: 20px;
+}
+.links-text {
+   display: inline-block;
+   margin-left: 10px;
+}
+//end links
 
 @import "midia";
