@@ -1,0 +1,217 @@
+@media (max-width: 1110px) {
+   .header__contacts-instagram {
+      display: none;
+   }
+   .menu__list li + li {
+      margin-left: 30px;
+   }
+}
+@media (max-width: 1030px) {
+   .presentation-product__inner {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+   }
+   .presentation-product__item-img,
+   .presentation-product__item-box {
+      width: 100%;
+      max-width: 100%;
+   }
+   .presentation-product__item-img {
+      text-align: center;
+   }
+   .presentation-product__item-box {
+      margin-bottom: 20px;
+   }
+   .products__item {
+      width: 33.333%;
+   }
+}
+@media (max-width: 1000px) {
+   .header__home {
+      background-position: left top;
+   }
+   .header__menu{
+      flex-direction: row-reverse;
+   }
+   .header__contacts{
+      margin-left: 0;
+      margin-right: 10px;
+   }
+   
+   .menu__list {
+      display: none;
+      background-color: #08192f;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      text-align: center;
+      a {
+         padding: 10px 0;
+         display: block;
+         border-bottom: 1px solid #fff;
+      }
+      li {
+         display: block;
+         & + li {
+            margin-left: 0;
+         }
+         &:first-child {
+            border-top: 1px solid #fff;
+         }
+      }
+   }
+   .menu__btn {
+      display: block;
+      width: 30px;
+      cursor: pointer;
+      div {
+         background-color: #fff;
+         height: 3px;
+         & + div {
+            margin-top: 5px;
+         }
+      }
+   }
+   .presentation-about__inner {
+      flex-wrap: wrap;
+   }
+   .presentation-about__item-left {
+      margin-bottom: 20px;
+      margin-right: 0;
+   }
+
+   .presentation-about__item-right {
+      min-width: 100%;
+   }
+   .advantage__item {
+      width: 50%;
+      border-left: none;
+      &:nth-child(even) {
+         border-left: 1px solid #e4e4e4;
+      }
+   }
+   .form__box {
+      width: 70%;
+   }
+   .footer__col-logo {
+      width: 100%;
+   }
+   .footer__pay {
+      margin-left: 0;
+   }
+}
+@media (max-width: 800px) {
+   .header__box-title {
+      font-size: 30px;
+      line-height: 37px;
+      span {
+         font-size: 50px;
+         line-height: 50px;
+      }
+   }
+   .header__box-text {
+      font-size: 18px;
+   }
+   .form__box {
+      display: block;
+      width: 100%;
+      &-left {
+         margin-bottom: 15px;
+         width: 100%;
+      }
+      &-right {
+         width: 100%;
+      }
+   }
+   .form {
+      background-position: left top;
+   }
+}
+@media (max-width: 730px) {
+   .products__item {
+      width: 50%;
+   }
+   .products__top-inner {
+      display: block;
+   }
+   .products__top-title {
+      margin-bottom: 20px;
+   }
+   .footer__col-contacts {
+      width: 100%;
+   }
+   .footer__contacts-phone,
+   .footer__messege {
+      text-align: left;
+   }
+   .footer__contacts-instagram {
+      display: block;
+   }
+}
+@media (max-width: 644px) {
+   .header__bottom {
+      justify-content: center;
+   }
+   .header__contacts{
+      display: none;
+   }
+   .header__menu{
+      padding: 16px 11px;
+   }
+}
+@media (max-width: 570px) {
+   .presentation-about__item-right {
+      display: block;
+   }
+   .presentation-about__item-img {
+      margin: 0 auto;
+      margin-bottom: 10px;
+   }
+   .presentation-about__item-box {
+      max-width: 260px;
+      margin: 0 auto;
+   }
+}
+@media (max-width: 500px) {
+   .header__box {
+      max-width: none;
+   }
+   .advantage__item {
+      width: 100%;
+      &:nth-child(even) {
+         border-left: none;
+      }
+   }
+}
+
+@media (max-width: 470px) {
+   .products__item {
+      width: 100%;
+   }
+   .products__btn {
+      width: 100%;
+   }
+   .form__btn {
+      width: 100%;
+   }
+}
+@media (max-width: 440px) {
+   .presentation-about__item-right {
+      padding: 25px;
+   }
+}
+@media (max-width: 350px) {
+   .presentation-about__item-right {
+      padding: 15px;
+   }
+}
+
+
+
+@media (min-width: 1001px) {
+   .menu__list {
+      display: flex !important;
+   }
+}

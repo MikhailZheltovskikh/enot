@@ -1,8 +1,8 @@
 html,
 body {
    height: 100%;
-   // position: relative;
-   // overflow-x: hidden;
+   position: relative;
+   overflow-x: hidden;
 }
 a {
    display: inline-block;
@@ -59,4 +59,7 @@ body {
    line-height: 120.9%;
    text-align: center;
    letter-spacing: 0.03em;
+}
+.menu__btn{
+   display: none;
 }
