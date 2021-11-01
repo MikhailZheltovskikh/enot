@@ -69,6 +69,7 @@
       div {
          background-color: #fff;
          height: 3px;
+         transition: all .3s;
          & + div {
             margin-top: 5px;
          }
