@@ -89,3 +89,53 @@ body {
       }
    }
 }
+
+.breadcrumbs {
+   &__inner {
+      padding: 34px 0;
+   }
+   overflow: hidden;
+   // width: 1206px;
+   &__list {
+      li {
+         display: inline-block;
+         position: relative;
+         & + li {
+            padding-left: 24px;
+            &::before {
+               content: "-";
+               position: absolute;
+               left: 8px;
+               color: #F27E14;
+            }
+         }
+      }
+   }
+}
+.slick-dots{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   li{
+      display: inline-block;
+      position: relative;
+      &::before{
+         position: absolute;
+         content: '';
+         width: 5px;
+         height: 5px;
+         background-color: #9395a2;
+         border-radius: 50%;
+      }
+      & + li{
+         margin-left: 10px;
+      }
+      &.slick-active::before{
+         background-color: #F27E14;
+      }
+   }
+   button{
+      display: none;
+   }
+}

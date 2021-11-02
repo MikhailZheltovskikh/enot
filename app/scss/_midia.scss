@@ -30,14 +30,14 @@
    .header__home {
       background-position: left top;
    }
-   .header__menu{
+   .header__menu {
       flex-direction: row-reverse;
    }
-   .header__contacts{
+   .header__contacts {
       margin-left: 0;
       margin-right: 10px;
    }
-   
+
    .menu__list {
       display: none;
       background-color: #08192f;
@@ -69,7 +69,7 @@
       div {
          background-color: #fff;
          height: 3px;
-         transition: all .3s;
+         transition: all 0.3s;
          & + div {
             margin-top: 5px;
          }
@@ -103,6 +103,17 @@
       margin-left: 0;
    }
 }
+@media (max-width: 950px) {
+   .product__info-inner {
+      display: block;
+   }
+   .product__info-slider {
+      margin: 0 auto;
+   }
+   .product__info-slider {
+      margin-bottom: 20px;
+   }
+}
 @media (max-width: 800px) {
    .header__box-title {
       font-size: 30px;
@@ -128,6 +139,9 @@
    }
    .form {
       background-position: left top;
+   }
+   .product__properties-item {
+      width: 100%;
    }
 }
 @media (max-width: 730px) {
@@ -155,10 +169,10 @@
    .header__bottom {
       justify-content: center;
    }
-   .header__contacts{
+   .header__contacts {
       display: none;
    }
-   .header__menu{
+   .header__menu {
       padding: 16px 11px;
    }
 }
@@ -175,6 +189,15 @@
       margin: 0 auto;
    }
 }
+@media (max-width: 520px) {
+   .thumbs {
+      display: none;
+   }
+   .slider {
+      margin: 0 auto;
+   }
+}
+
 @media (max-width: 500px) {
    .header__box {
       max-width: none;
@@ -197,19 +220,51 @@
    .form__btn {
       width: 100%;
    }
+   .properties__item-wrapper {
+      padding: 20px;
+   }
+   .product__properties {
+      padding: 35px 10px 32px;
+   }
 }
 @media (max-width: 440px) {
    .presentation-about__item-right {
       padding: 25px;
    }
 }
+@media (max-width: 380px) {
+   .product__info-slider {
+      max-width: 100%;
+      max-height: 100%;
+   }
+   .slider {
+      max-width: 100%;
+   }
+   .slider__item {
+      min-height: 100%;
+   }
+   .slick-list.draggable {
+      min-height: 100% !important;
+      height: none;
+   }
+   .thumbs.slick-initialized.slick-slider.slick-vertical,
+   .slick-list.draggable,
+   .slick-track {
+      height: 100%;
+   }
+   .product__description-btn{
+      width: 100%;
+   }
+}
+
 @media (max-width: 350px) {
    .presentation-about__item-right {
       padding: 15px;
    }
+   .properties__item-number {
+      text-align: center;
+   }
 }
-
-
 
 @media (min-width: 1001px) {
    .menu__list {
