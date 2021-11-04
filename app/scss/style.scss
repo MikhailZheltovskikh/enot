@@ -168,7 +168,6 @@
 }
 .presentation-about__inner {
    display: flex;
-   flex-wrap: wrap;
    margin-bottom: 42px;
 }
 .presentation-about__item-title {
@@ -643,7 +642,7 @@
    display: flex;
    flex-wrap: wrap;
 }
-.about__item-img{
+.about__item-img {
    width: 50%;
    img {
       max-width: 100%;
@@ -793,7 +792,7 @@
 }
 
 //start history
-.history{
+.history {
    margin-bottom: 25px;
 }
 .history__item {
@@ -810,8 +809,8 @@
    font-weight: 900;
    font-size: 28px;
    line-height: 33px;
-   background-color: #F27E14 ;
-   background-image: linear-gradient(180deg, #F0B403 0%, #F27E14 105.17%);
+   background-color: #f27e14;
+   background-image: linear-gradient(180deg, #f0b403 0%, #f27e14 105.17%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    min-width: 120px;
@@ -825,6 +824,85 @@
    color: #2e2f30;
 }
 //end history
+//start contact
+.contact__inner {
+   display: flex;
+   
+   margin-bottom: 30px;
+}
+.contact__box {
+   width: 30%;
+   margin-right: 20px;
+   &-title {
+      margin-bottom: 48px;
+   }
+   &-city {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 27px;
+      color: #ffffff;
+      background: #f1a10a;
+      border-radius: 12px 4px 8px 7px;
+      padding: 5px 10px;
+      margin-bottom: 26px;
+      max-width: 117px;
+   }
+}
+.contact__box-phone,
+.contact__box-messege,
+.contact__box-adress {
+   display: block;
+   padding-left: 28px;
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 28px;
+   font-feature-settings: "pnum" on, "lnum" on;
+   color: #9395a2;
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+   }
+}
+.contact__box-phone {
+   font-size: 20px;
+   line-height: 23px;
+   margin-bottom: 20px;
+   &::before {
+      background-image: url(../images/contact-phone.svg);
+      width: 16px;
+      height: 16px;
+      top: 3px;
+   }
+}
+.contact__box-messege {
+   margin-bottom: 20px;
+   &::before {
+      background-image: url(../images/contact-mail.svg);
+      width: 14px;
+      height: 10px;
+      top: 10px;
+   }
+}
+.contact__box-adress {
+   &::before {
+      background-image: url(../images/contact-adress.svg);
+      width: 13px;
+      height: 17px;
+      top: 8px;
+   }
+}
+.contact__map{
+   width: 70%;
+   iframe {
+      width: 100%;
+      height: 275px;
+   }
+}
+
+
+//end contact
 
 //start links
 .links {
